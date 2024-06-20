@@ -14,3 +14,9 @@
   color: #270;
   background-color: #DFF2BF;
 }
+.successHidden {
+    display: none;
+}
+.successShow {
+    display: flex;
+}

@@ -167,7 +167,7 @@
 				<h2 class="major">Get in touch</h2>
 				<!-- <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p> -->
 				<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-				<form target="dummyframe" method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdotjRMPLAdAMb_u1RVtGfM_t2ip_XdPztC2rymi3YVoEdqGA/formResponse" onsubmit="showHide(); return false;">
+				<form id="contactform" target="dummyframe" method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdotjRMPLAdAMb_u1RVtGfM_t2ip_XdPztC2rymi3YVoEdqGA/formResponse" onsubmit="">
 					<div class="fields">
 						<div class="field">
 							<label for="name">Name</label>
@@ -211,36 +211,29 @@
 
 	</div>
 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 	<script type="text/javascript">
-		
-		function waitForElement(elementId, callBack){
-			window.setTimeout(function(){
-				var element = document.getElementById(elementId);
-				if(element){
-				callBack(elementId, element);
-				}else{
-				waitForElement(elementId, callBack);
-				}
-			},500)
-		}
 
-		waitForElement("success", showHide())
-		
-		// var div = document.getElementById(success);
-		// div.style.display = 'none';
 
-		function showHide() {
-		  var div = document.getElementById(success);
-		  if (div.style.display == 'none') {
-			div.style.display = 'flex';
-		  }
-		  else {
-			div.style.display = 'none';
-		  }
-		}
+	// $(document).ready(function(){
+	// 	$("#success").addClass("successHidden");
+	// 	// $("#success").addClass("successHidden");
+	// });
+
+	// $("form").submit(function(){
+	// 	$('#contactform')[0].reset();
+	// 	$("#success").removeClass("successShow");
+	// 	$("#success").addClass("successShow");
+	// 	$("#success").fadeIn(10);
+	// 	$("#success" ).delay( 2000 ).fadeOut( 400 );
+
+	// });
 	   </script>	   
 
 	<!-- Scripts -->
+	<script src="assets/js/message.js"></script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>

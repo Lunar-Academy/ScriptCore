@@ -11,6 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/gallery.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="assets/css/message.css" />
+
 
         <link rel="apple-touch-icon" sizes="180x180" href="logo/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32x32.png">
@@ -374,21 +376,32 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				<!-- Footer -->
                 <section id="footer">
                     <div class="inner">
+        
+                        <div id="success" class="success-msg" style="margin-bottom: 3rem;">
+                            <i class="fa fa-check"></i>
+                            The form has been successfully submitted. We will reach out to you soon!
+                          </div>	
+        
                         <h2 class="major">Get in touch</h2>
                         <!-- <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p> -->
-                        <form method="post" action="#">
+                        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+                        <form id="contactform" target="dummyframe" method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdotjRMPLAdAMb_u1RVtGfM_t2ip_XdPztC2rymi3YVoEdqGA/formResponse" onsubmit="">
                             <div class="fields">
                                 <div class="field">
                                     <label for="name">Name</label>
-                                    <input type="text" name="name" id="name" />
+                                    <input type="text" required name="entry.1493623600" id="name" />
+                                </div>
+                                <div class="field">
+                                    <label for="email">Phone Number</label>
+                                    <input type="tel" required name="entry.440994670" id="phone" />
                                 </div>
                                 <div class="field">
                                     <label for="email">Email</label>
-                                    <input type="email" name="email" id="email" />
+                                    <input type="email" required name="entry.1065624121" id="email" />
                                 </div>
                                 <div class="field">
                                     <label for="message">Message</label>
-                                    <textarea name="message" id="message" rows="4"></textarea>
+                                    <textarea name="entry.1279566402" required id="message" rows="4"></textarea>
                                 </div>
                             </div>
                             <ul class="actions">
@@ -397,14 +410,15 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
                         </form>
                         <ul class="contact">
                             <!-- <li class="icon solid fa-home">
-                                Untitled Inc<br />
-                                1234 Somewhere Road Suite #2894<br />
-                                Nashville, TN 00000-0000
-                            </li>
-                            <li class="icon solid fa-phone">(000) 000-0000</li> -->
-                            <li class="icon solid fa-envelope"><a href="mailto:contact@scriptcore.org">contact@scriptcore.org</a></li>
+                                            Untitled Inc<br />
+                                            1234 Somewhere Road Suite #2894<br />
+                                            Nashville, TN 00000-0000
+                                        </li>
+                                        <li class="icon solid fa-phone">(000) 000-0000</li> -->
+                            <li class="icon solid fa-envelope"><a
+                                    href="mailto:contact@scriptcore.org">contact@scriptcore.org</a></li>
                             <!-- <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-                            <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li> -->
+                                        <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li> -->
                             <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
                         </ul>
                         <ul class="copyright">
@@ -412,11 +426,15 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
                         </ul>
                     </div>
                 </section>
-
-        </div>
         
+            </div>
+        
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+                
 
 		<!-- Scripts -->
+            <script src="assets/js/message.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
