@@ -11,6 +11,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/message.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -70,13 +71,13 @@
 			<!-- One -->
 			<section id="one" class="wrapper spotlight style1 first">
 				<div class="inner">
-					<a href="#" class="image image1"><img src="images/target.png" alt="" /></a>
+					<a class="image image1"><img src="images/target.png" alt="" /></a>
 					<div class="content">
 						<h2 class="major">Mission</h2>
 						<p>Scriptcore is an organization brought up with the intent of bringing computer science
 							education for all levels, equipping participants with essential skills for various
 							industries and cultivating valuable skills. </p>
-						<a href="#" class="special">Learn more</a>
+						<a href="mission.html" class="special">Learn more</a>
 					</div>
 				</div>
 			</section>
@@ -84,13 +85,13 @@
 			<!-- Two -->
 			<section id="two" class="wrapper alt spotlight style2">
 				<div class="inner">
-					<a href="#" class="image image1"><img src="images/programming.png" alt="" /></a>
+					<a class="image image1"><img src="images/programming.png" alt="" /></a>
 					<div class="content">
 						<h2 class="major">Our Programs</h2>
 						<p>Explore the variety of programs designed and offered by our team. Each program provides an
 							introductory course on its topic, equipping learners with the essential tools and knowledge
 							to pursue further learning.</p>
-						<a href="#" class="special">Learn more</a>
+						<a href="programs.html" class="special">Learn more</a>
 					</div>
 				</div>
 			</section>
@@ -98,13 +99,13 @@
 			<!-- Three -->
 			<section id="three" class="wrapper spotlight style3">
 				<div class="inner">
-					<a href="#" class="image image1"><img src="images/user.png" alt="" /></a>
+					<a class="image image1"><img src="images/user.png" alt="" /></a>
 					<div class="content">
 						<h2 class="major">About Us</h2>
 						<p>Meet the ScriptCore team and gain deeper insight into our expertise and dedication. Discover
 							the skilled professionals behind our success, their backgrounds, and their contributions to
 							our innovative projects.</p>
-						<a href="#" class="special">Learn more</a>
+						<a href="about.html" class="special">Learn more</a>
 					</div>
 				</div>
 			</section>
@@ -157,21 +158,32 @@
 		<!-- Footer -->
 		<section id="footer">
 			<div class="inner">
+
+				<div id="success" class="success-msg" style="margin-bottom: 3rem;">
+					<i class="fa fa-check"></i>
+					The form has been successfully submitted. We will reach out to you soon!
+				  </div>	
+
 				<h2 class="major">Get in touch</h2>
 				<!-- <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p> -->
-				<form method="post" action="#">
+				<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+				<form target="dummyframe" method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdotjRMPLAdAMb_u1RVtGfM_t2ip_XdPztC2rymi3YVoEdqGA/formResponse" onsubmit="showHide(); return false;">
 					<div class="fields">
 						<div class="field">
 							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
+							<input type="text" required name="entry.1493623600" id="name" />
+						</div>
+						<div class="field">
+							<label for="email">Phone Number</label>
+							<input type="tel" required name="entry.440994670" id="phone" />
 						</div>
 						<div class="field">
 							<label for="email">Email</label>
-							<input type="email" name="email" id="email" />
+							<input type="email" required name="entry.1065624121" id="email" />
 						</div>
 						<div class="field">
 							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="4"></textarea>
+							<textarea name="entry.1279566402" required id="message" rows="4"></textarea>
 						</div>
 					</div>
 					<ul class="actions">
@@ -198,6 +210,35 @@
 		</section>
 
 	</div>
+
+	<script type="text/javascript">
+		
+		function waitForElement(elementId, callBack){
+			window.setTimeout(function(){
+				var element = document.getElementById(elementId);
+				if(element){
+				callBack(elementId, element);
+				}else{
+				waitForElement(elementId, callBack);
+				}
+			},500)
+		}
+
+		waitForElement("success", showHide())
+		
+		// var div = document.getElementById(success);
+		// div.style.display = 'none';
+
+		function showHide() {
+		  var div = document.getElementById(success);
+		  if (div.style.display == 'none') {
+			div.style.display = 'flex';
+		  }
+		  else {
+			div.style.display = 'none';
+		  }
+		}
+	   </script>	   
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
