@@ -293,30 +293,68 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 											<li><span class="button disabled">Disabled</span></li>
 										</ul>
 									</section> -->
+                                    
+                                    <div id="successsignup" class="success-msg" style="margin-bottom: 3rem;">
+                                        <i class="fa fa-check"></i>
+                                        You have successfully registered. We will reach out to you soon!
+                                      </div>	
+                    
+                    
 
                     <section>
-										<h3 class="major">Form</h3>
-										<form method="post" action="#">
-											<div class="row gtr-uniform">
+                                    <iframe name="dummyframe2" id="dummyframe2" style="display: none;"></iframe>
+
+										<h3 class="major">Sign Up</h3>
+										<form id="signupform" method="post" target="dummyframe2" action="https://script.google.com/macros/s/AKfycbxNMTtnGQUcfN3Cf2LGZl78fIn_RKHgA4tPyZxMgHqCqU-s5XQFwcpBX86jWkbqO2NS/exec">
+                                            <input type="hidden" name="Date" value="" id="date">
+                                            <div class="row gtr-uniform">
 												<div class="col-6 col-12-xsmall">
-													<label for="demo-name">Name</label>
-													<input type="text" name="demo-name" id="demo-name" value="" />
+													<label for="Parent Name">Parent Name</label>
+													<input type="text" name="Parent Name" id="Parent Name" value="" />
 												</div>
 												<div class="col-6 col-12-xsmall">
-													<label for="demo-email">Email</label>
-													<input type="email" name="demo-email" id="demo-email" value="" />
+													<label for="Student Name">Student Name</label>
+													<input type="text" name="Student Name" id="Student Name" value="" />
 												</div>
-												<div class="col-12">
-													<label for="demo-category">Category</label>
-													<select name="demo-category" id="demo-category">
-														<option value="">-</option>
-														<option value="1">Manufacturing</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
+												<div class="col-6 col-12-xsmall">
+													<label for="Parent Email">Parent Email</label>
+													<input type="email" name="Parent Email" id="Parent Email" value="" />
+												</div>
+												<div class="col-6 col-12-xsmall">
+													<label for="Student Email">Student Email (optional)</label>
+													<input type="email" name="Student Email" id="Student Email" value="" />
+												</div>
+												<div class="col-6 col-12-xsmall">
+													<label for="Parent Phone">Parent Phone</label>
+													<input type="text" name="Parent Phone" id="Parent Phone" value="" />
+												</div>
+                                                <div class="col-6 col-12-xsmall">
+                                                    <label for="State">State</label>
+                                                    <input type="text" name="State" id="State" value="" />
+                                                </div>
+                                                <div class="col-6 col-12-xsmall">
+                                                    <label for="Student School">Student School</label>
+                                                    <input type="text" name="Student School" id="Student School" value="" />
+                                                </div>
+												<div class="col-6 col-12-xsmall">
+													<label for="Grade">Student Grade (As of fall 2024)</label>
+													<select name="Grade" id="Grade">
+                                                        <option value=""></option>
+														<option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
 													</select>
 												</div>
-												<div class="col-4 col-12-small">
+												<!-- <div class="col-4 col-12-small">
 													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
 													<label for="demo-priority-low">Low Priority</label>
 												</div>
@@ -327,22 +365,33 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 												<div class="col-4 col-12-small">
 													<input type="radio" id="demo-priority-high" name="demo-priority">
 													<label for="demo-priority-high">High Priority</label>
+												</div> -->
+                                                <div class="col-12" >
+													<label for="" style="padding-top: 2.2rem;">Courses (select below)</label>
 												</div>
 												<div class="col-6 col-12-small">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy</label>
+													<input type="checkbox" id="intro-to-computer-programming" name="intro-to-computer-programming">
+													<label for="intro-to-computer-programming">Intro to Computer Programming</label>
 												</div>
 												<div class="col-6 col-12-small">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">Not a robot</label>
+													<input type="checkbox" id="intro-to-computer-hardware" name="intro-to-computer-hardware">
+													<label for="intro-to-computer-hardware">Intro to Computer Hardware</label>
 												</div>
-												<div class="col-12">
-													<label for="demo-message">Message</label>
-													<textarea name="demo-message" id="demo-message" rows="6"></textarea>
+												<div class="col-6 col-12-small">
+													<input type="checkbox" id="python" name="python">
+													<label for="python">Basic and Intermediate Python</label>
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="checkbox" id="java" name="java">
+													<label for="java">Basic and Intermediate Java</label>
+												</div>
+												<div class="col-12" style="padding-top: 4rem;">
+													<label for="QC">Questions or Concerns</label>
+													<textarea name="QC" id="QC" rows="4"></textarea>
 												</div>
 												<div class="col-12">
 													<ul class="actions">
-														<li><input type="submit" value="Send Message" class="primary" /></li>
+														<li><input type="submit" value="Submit" class="primary" /></li>
 														<li><input type="reset" value="Reset" /></li>
 													</ul>
 												</div>

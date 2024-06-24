@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $("#success").addClass("successHidden");
+    $("#successsignup").addClass("successHidden");
 });
 
 // $("contactform").submit(function(){
@@ -25,6 +26,22 @@ $('#contactform').submit(function() {
 
     return false;
 });
+
+$('#signupform').submit(function() {
+    this.submit();
+    var form = document.getElementById("signupform");
+    form.reset();
+
+    $("#successsignup").removeClass("successShow");
+    $("#successsignup").addClass("successShow");
+    $("#successsignup").fadeIn(10);
+    document.getElementById("wrapper").scrollIntoView();
+    $("#successsignup" ).delay( 3500 ).fadeOut( 400 );
+
+
+    return false;
+});
+
 
 
 $(document).ready(function(){
