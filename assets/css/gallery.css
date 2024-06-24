@@ -3613,7 +3613,7 @@ body.is-menu-visible #menu .inner {
 	#banner {
 		padding: 7em 0 8.25em 0;
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(252, 169, 61, 0.164), rgba(255, 174, 0, 0.137)), url("../../images/banner.png");
+		/* background-image: linear-gradient(to top, rgba(252, 169, 61, 0.164), rgba(255, 174, 0, 0.137)), url("../../images/banner.png"); */
 		background-size: auto,
 			cover;
 		background-position: center,
@@ -3725,7 +3725,7 @@ body.is-preload #banner p {
 	#wrapper>header {
 		padding: 9em 0 6.25em 0;
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(252, 169, 61, 0.164), rgba(255, 174, 0, 0.137)), url("../../images/banner.png");
+		/* background-image: linear-gradient(to top, rgba(252, 169, 61, 0.164), rgba(255, 174, 0, 0.137)), url("../../images/banner.png"); */
 		background-size: auto,
 			cover;
 		background-position: center,
