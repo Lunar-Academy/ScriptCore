@@ -15,7 +15,7 @@ $(document).ready(function(){
 $('#contactform').submit(function() {
     this.submit();
     var form = document.getElementById("contactform");
-    form.reset();
+    // form.reset();
 
     $("#success").removeClass("successShow");
     $("#success").addClass("successShow");
@@ -30,7 +30,7 @@ $('#contactform').submit(function() {
 $('#signupform').submit(function() {
     this.submit();
     var form = document.getElementById("signupform");
-    form.reset();
+    // form.reset();
 
     $("#successsignup").removeClass("successShow");
     $("#successsignup").addClass("successShow");
