@@ -4059,9 +4059,12 @@ html{
 	background-color: #3f4e85;
 }
 
-.wrapper.spotlight.style3:before,
-.wrapper.spotlight.style3:after {
+.wrapper.spotlight.style3:before {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%233f4e85%3B' /%3E%3C/svg%3E");
+}
+
+.wrapper.spotlight.style3:after{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,0 100 100,0 100,100' style='fill:%233f4e85%3B' /%3E%3C/svg%3E");
 }
 
 .wrapper.spotlight.style3:before {
@@ -4070,6 +4073,7 @@ html{
 
 .wrapper.spotlight.style3:after {
 	box-shadow: inset 0 -1px 0 0 #3f4e85, 0 1px 0 0 #3f4e85;
+	
 }
 
 .wrapper.spotlight.style4 {

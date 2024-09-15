@@ -9,8 +9,6 @@ document.write(`
                     <li><a href="/#two">Programs</a></li>
                     <li><a href="about">About Us</a></li>
                     <li><a href="/#four">Accomplishments</a></li>
-                    <li><a href="sign-up">Sign Up</a></li>
-					<li><a href="online-courses">Online Class Information</a></li>
 					<li><a href="#footer">Contact Us</a></li>
 					<li><a href="donate">Donate</a></li>
 				</ul>
@@ -19,3 +17,6 @@ document.write(`
 		</nav>
 
     `);
+
+//<li><a href="sign-up">Sign Up</a></li>
+//<li><a href="online-courses">Online Class Information</a></li>
