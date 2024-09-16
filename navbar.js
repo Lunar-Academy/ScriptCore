@@ -6,7 +6,7 @@ document.write(`
 				<ul class="links">
                     <li><a href="/">Home</a></li>
                     <li><a href="/#one">Mission</a></li>
-                    <li><a href="/#two">Programs</a></li>
+                    <li><a href="programs">Programs</a></li>
                     <li><a href="about">About Us</a></li>
                     <li><a href="/#four">Accomplishments</a></li>
 					<li><a href="#footer">Contact Us</a></li>
